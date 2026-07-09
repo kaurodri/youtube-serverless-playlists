@@ -1,5 +1,6 @@
-import dotenv from "dotenv";
-dotenv.config();
+if (!process.env.VERCEL) {
+  require("dotenv").config();
+}
 
 export const config = {
   apiKey: process.env.API_KEY ?? "",
