@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node src/handler.ts",
     "local": "ts-node src/local.ts"
   },
   "dependencies": {
@@ -13,8 +12,8 @@
     "iso8601-duration": "^2.1.0"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.119",
     "@types/node": "^20.0.0",
+    "@vercel/node": "^5.8.22",
     "ts-node": "^10.9.0",
     "typescript": "^5.0.0"
   }
